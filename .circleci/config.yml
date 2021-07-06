@@ -31,9 +31,9 @@ jobs:
       #- run:
       #    name: Run testsx
       #    command: npm test
-      - run:
-          name: Run npm installx
-          command: npm install          
+      #- run:
+      #    name: Run npm installx
+      #    command: npm install          
       - snyk/scan:
           fail-on-issues: true                    
           severity-threshold: high

@@ -28,16 +28,16 @@ jobs:
       # If you are using yarn instead npm, remove the line above and uncomment the two lines below.
       # - node/install-packages:
       #     pkg-manager: yarn 
-      - run:
-          name: Run testsx
-          command: npm test
+      #- run:
+      #    name: Run testsx
+      #    command: npm test
       - run:
           name: Run npm installx
           command: npm install          
       - snyk/scan:
           fail-on-issues: true                    
           severity-threshold: high
-          token-variable: SNYK_API_TOKEN
+          #token-variable: SNYK_API_TOKEN
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.

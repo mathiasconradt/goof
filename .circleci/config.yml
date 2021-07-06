@@ -29,10 +29,10 @@ jobs:
       # - node/install-packages:
       #     pkg-manager: yarn 
       - run:
-          name: Run tests
+          name: Run testsx
           command: npm test
       - run:
-          name: Run npm install
+          name: Run npm installx
           command: npm install          
       - snyk/scan:
           fail-on-issues: true                    
